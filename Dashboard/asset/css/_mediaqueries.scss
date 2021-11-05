@@ -1,0 +1,126 @@
+ @media only screen and(max-width: 992px)
+ {
+    .loginbox{
+     width: 80% !important;
+  }
+
+
+  .login_form{
+      width: 70% !important; 
+  }
+  .top-navbar{
+    position: static !important;
+  }
+     .top-menu{
+     display: none;
+   }
+    .icons{
+       display: none;
+    }
+   .wrapper{
+    margin-top: 20px;
+      flex-wrap: wrap;
+     .status-box{
+       width: 46%;
+     }
+   }
+   // top ends 
+   .status-wrapper{
+      flex-wrap: wrap;
+    .staticbox{
+       width: 47% !important;
+    }
+   }
+   //code ends
+   .small_menu{
+     display: block !important;
+   }
+
+   .chart-wrapper{ 
+     flex-direction: column;
+
+     .chartbox{
+       width: 100% !important;  
+     }
+   }
+
+ }
+
+ @media only screen and (max-width: 768px)
+ {
+  .loginbox{
+     width: 80% !important;
+  }
+  .user-icon{
+     left: 30%;
+  }
+  .recent{
+     margin-top: 400px !important;
+  h4{
+    text-align: center !important;
+   }
+  }
+
+  #sm_searchbox{
+     width: 100%;
+  }
+   .wrapper{
+      flex-direction: column;
+     .status-box{
+       width: 96%;
+       margin: 10px auto;
+     }
+
+   }
+/// top section ends
+
+.chart-wrapper{
+    flex-direction: column;
+   .chartbox{
+     width: 96% !important;
+     margin: 10px auto;
+   }
+}
+//top section ends 
+
+.status-wrapper{
+    flex-direction: column;
+ .staticbox{
+   width: 96% !important;
+ }
+ 
+
+
+ 
+
+    .searchtable{
+        width: 70% !important; 
+input{
+     width: 100% !important;
+}
+}
+
+
+
+
+}
+
+
+
+
+
+ } // media queriy class
+
+
+ @media screen and (max-width: 576px)
+ {
+
+
+    .searchtable{
+        width: 70% !important; 
+input{
+     width: 80% !important;
+}
+}
+
+ }

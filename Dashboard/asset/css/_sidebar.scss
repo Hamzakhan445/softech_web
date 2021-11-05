@@ -1,0 +1,68 @@
+$textcolor : #828a90;
+ .sidebar{
+	 width: 250px;
+	 height: 100%;
+	 background:white;
+	 box-shadow:2px 4px 13px lightgrey;
+	 padding:15px;
+	 right: -100%;
+	 position: fixed;
+ 	 overflow: scroll;
+ 
+.logo{
+    width: 70px;
+    height: 70px;
+}
+.sidebar-menu{
+	li{
+		list-style: none;
+		padding:2px;
+		line-height: 50px;
+	}
+	li:hover{
+		 background:lightgrey;
+		 transition: 0.5s;
+	}
+	a{
+		text-decoration: none;
+		color: $textcolor;
+ 		font-size: 16px;
+		padding:10px;
+		cursor: pointer;
+	}
+.angle{
+	float: right;
+}
+#dashboard li:hover{
+	 border-left: 5px solid lightgreen;
+	 transition: 0.5s;
+}
+.arrow{
+	 font-size: 15px;
+	 opacity: 0.5;
+	 font-weight: lighter;
+}
+}
+}
+.sidebar::-webkit-scrollbar{
+width: 7px;
+height: 7px;
+}
+::-webkit-scrollbar-thumb{
+background: linear-gradient(65deg, #E5E8FF 0%,#E4D4E6 14%);
+border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+background: linear-gradient(13deg, #C7CEFF 14%,#FFF1E0 18%,#F9D4FF 64%);
+}
+::-webkit-scrollbar-track{
+background: #FFFFFF;
+border-radius: 10px;
+box-shadow: inset 7px 10px 12px 0px #F0F0F0;
+}
+
+
+
+/*The sidebar css styling section ends here **
+   ***********************************/
+

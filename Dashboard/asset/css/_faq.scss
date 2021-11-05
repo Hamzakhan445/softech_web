@@ -1,0 +1,28 @@
+
+
+
+.colbtn{
+	 background: white;
+	 padding: 20px;
+	 width: 100%;
+	 border:none;
+	 	 box-shadow: 3px 5px 12px lightgrey;
+&:focus{
+	 border: none;
+	 outline: none;
+}
+}
+
+
+.faqbox{
+	 	 box-shadow: 3px 5px 12px lightgrey;
+	 	 background: white;
+	 	 padding: 15px;
+	 	 border-radius: 10px;
+}
+
+#faqdata, #faqdata2, #fadata3{
+	 padding: 20px;
+	 box-shadow: 3px 5px 12px lightgrey;
+	 background: white;
+}

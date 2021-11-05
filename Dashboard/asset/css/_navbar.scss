@@ -1,0 +1,43 @@
+@mixin top-flex{
+	 display: flex;
+	 align-items:center;
+	 justify-content: space-between;
+}
+.top-navbar{
+	 width: 100%;
+	 background: white;
+	 transition: 0.4s ease-in;
+
+.navbar-content{
+	@include top-flex;
+}
+
+//////////////////////
+
+.profile{
+	@include top-flex;
+img{
+	 width: 45px;
+	 height: 45px;
+	 border-radius: 100px;
+	 object-fit: cover;
+	 cursor: pointer;
+}
+
+}
+}
+
+
+.search-bar{
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+	 padding: 10px;
+	 left: 0;
+	 visibility: hidden;
+	 opacity: 0;
+
+}
+.pngicon{
+	 width: 20px !important;
+}

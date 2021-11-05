@@ -1,0 +1,828 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+ 
+}
+body{
+	 background: #e9ecef !important;
+ } 
+ @import '_sidebar';
+@import '_mediaqueries';
+@import '_navbar';
+@import '_scrollbar';
+@import '_login';
+@import '_table';
+@import '_faq';
+
+
+ 
+$bgcolor : #f7f7ff;
+
+$color1 : #30c4df;
+
+$color2 : #fd6c81;
+
+$color3 : #66c15b;
+
+$color4 : #ffa450;
+
+$textcolor : #828a90;
+
+
+
+@mixin slide{
+	@keyframes slide{
+0%{
+	width: 0;
+}
+100%{
+	width: 90%;
+}
+}
+
+}
+
+@mixin flexx{
+
+	 display: flex;
+	 justify-content: space-between;
+	 width: 100%;
+}
+@mixin active{
+		 opacity: 1 !important;
+	 top: 3% !important;
+	 visibility: visible !important; 
+}
+@mixin messagebox{
+	position:absolute;
+	 z-index: 20;
+	 top: 20%;
+	 background:white;
+	 transition: 0.5s ease;
+	 box-shadow: 3px 5px 10px lightgrey;
+	 padding: 10px;
+	 height: 150px;
+	 overflow: scroll;
+	 margin-top: 60px;
+	 opacity: 0;
+	 visibility: hidden;
+}
+@mixin drop{
+	  background:white;
+	 box-shadow:3px 3px 12px lightgrey;
+	 position:absolute;
+	 width: 100%;
+ 	 top: 140%;
+	 right: 4%;
+	 visibility: hidden;
+	 opacity: 0;
+	 z-index: 99;
+	 transition: 0.3s ease;
+	 overflow: auto;
+	 border-radius: 10px;
+}
+
+	$back :linear-gradient(135deg, #667eea 0%, #764ba2 100%);	
+
+/*Css links and more toop section***
+************************************/
+ 
+
+
+
+
+
+
+
+.main-container{
+ 	 width: 95%;
+	 margin: 0 auto;
+}
+
+/*The Main css styling section ends here **
+   ****************ffff*******************/   
+
+.main{
+	width: 100%;
+ }
+ .chart-wrapper{
+ 	 @include flexx;
+   .chartbox{
+ 	 width: 65%;
+ 	 height: 500px;
+  }
+ .chartbox:nth-child(2){
+  	  	 width: 32%;
+   	  	 height: 500px !important;
+
+
+ } 
+ }
+.logo{
+    width: 70px;
+    height: 70px;
+}
+ .wrapper{
+ 	 width: 100%;
+ 	 display: flex;
+ 	 justify-content: space-between;
+ }
+.status-box{
+	background:white;
+ 	border-radius:10px;
+	border-left: 5px solid $color1;
+	color: $textcolor;
+	box-shadow: 2px 3px 12px lightgrey;
+    width: 25%;
+ 	margin: 10px;
+ .box-text{
+h3{
+	 color: $color1;
+
+}
+}
+.box-icon{
+background: $color1;
+width: 50px;
+height: 50px;
+padding: 10px;
+border-radius:100px;
+text-align: center;
+i{
+	 font-size: 25px;
+	 color: white;
+ }
+}
+}
+.status-box:hover{
+	 box-shadow:3px 5px 14px lightgrey;
+	 transition: 0.5s;
+}
+
+.status-box:hover i{
+	transform: rotate(360deg);
+	 transition: 0.5s;
+}
+
+.status-box:nth-child(2){
+	border-left: 4px solid $color2;
+.box-icon:nth-child(2){
+	background: $color2;
+}
+h3{
+	 color: $color2;
+}
+}
+.custom{
+	 position:relative;
+
+}
+
+.custom::after{
+	 content: "k";
+	 position:absolute;
+	 
+}
+.status-box:nth-child(3){
+	border-left: 4px solid $color3;
+.box-icon{
+	background: $color3;
+}
+h3{
+	 color: $color3;
+}
+}
+.status-box:nth-child(4){
+	border-left: 4px solid $color4;
+.box-icon{
+	background: $color4;
+}
+h3{
+	 color: $color4;
+}
+}
+
+
+.navmenu{
+.form-group{
+	background: #f7f7ff;
+
+input[type=search]{
+	background:none;
+	border: none;
+ }
+}
+.list-menu{
+position:relative;
+i{
+	 font-size: x-large;
+	 margin: 10px;
+	 color: black;
+	 opacity: 0.5;
+}
+a{
+	 	 text-decoration: none;
+}
+}
+.profile{
+	width: 40%;
+.profile-img{
+	 width: 45px;
+	 height: 45px;
+	 border-radius: 100px;
+	 object-fit: cover;
+	 cursor: pointer;
+}
+}
+
+}
+ 
+
+.top-menu{
+.menu{
+li{
+ }
+li:hover{
+	background:white;
+ 	transition: 0.5s ease;
+	text-align: center;
+}
+a{
+	 color: $textcolor;
+	 font-size: 19px;
+
+}
+i{
+ 
+}
+
+}
+}
+.home-drop{
+	 background:green;
+	 width: 180px;
+	 padding: 10px;
+	 position: absolute;
+	 top: 40%;
+	 transition: 0.3s ease;
+	 visibility: hidden;
+	 opacity: 0;
+}
+
+.status-wrapper{
+	@include flexx;
+	flex-wrap: wrap;
+ .staticbox{
+	 width: 31%;
+	 height: auto;
+	 margin: 10px;
+	 background:white;
+.staticimg{
+	 width: 60px;
+	 height: 60px;
+	 border-radius:60px;
+	 margin: 5px;
+	 object-fit: cover;
+}
+}
+}
+
+
+.mapwrapper{
+	justify-content: space-between;
+	margin: 10px;
+	display: flex;
+
+}
+
+
+
+.report{
+	 width: 100%;
+	 height: 6px;
+	 background:lightgrey;
+	 border-radius:60px;
+.reportbox{
+	 width: 90%;
+	 background:$color2;
+	 border-radius:60px;
+	 height: 100%;
+	 animation: slide 4s 1;
+}
+
+}
+
+.animation{
+	@include slide;
+}
+ 
+.flag{
+	width: 25px;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+
+
+.socialbox{
+	 border: 1px solid lightgrey;
+	 border-radius: 10px;
+	 height: 110px;
+&:hover{
+	 box-shadow: 3px 5px 10px grey;
+}
+.icon{
+	 background:$color1;
+	 color: white;
+	 text-align: center;
+	 width: 60px;
+	 height: 60px;
+	 border-radius:10px;
+	 line-height: 60px;
+}
+i{
+ 	font-size: 18px;
+ }	 
+
+}
+.socialbox:nth-child(2) .icon
+{
+	 background:$color2;
+}
+
+.socialbox:nth-child(3) .icon
+{
+	 background:$color3;
+}
+
+
+.smmenu{
+list-style: none;
+margin-top: 10px;
+position: absolute;
+background: $back;
+z-index: 9999;
+width: 100%;
+left: 0;
+ li{
+	line-height: 30px;
+	border-bottom: 1px solid lightgrey;
+	margin-right: 50px;
+ }
+
+a{
+	text-decoration: none;
+	width: 100%;
+ 
+&:hover{
+	color: lightgrey;
+}
+}
+}
+
+
+.searchbox{
+ 	 width: 50vw;
+ 	 background:white;
+ 	 box-shadow:3px 3px 10px lightgrey;
+   	 top: 22%;
+   	 right: 20%;
+   	 left: 0;
+   	 margin: 0 auto;
+   	 z-index: 99;
+   	 position:absolute;
+ 	 transition: 0.4s;
+	 padding: 4px;
+  	 transition: 0.4s;
+  	 visibility: hidden;
+  	 opacity: 0;
+ input{
+ 	 border:none;
+ }
+ }
+.searchactive{
+ 	visibility: visible !important;
+ 	opacity: 1;
+ }
+.box{
+	 width: 30%;
+	 margin: 40px;
+	 text-align: center;
+	 position:relative;
+}
+.myimg img{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+
+#sm-message{
+
+}
+#message{
+@include drop;
+}
+.bell{
+	 cursor: pointer;
+}
+#notification{
+height: 150px;
+@include drop;
+ }
+.profile{
+	 color: $back;
+	 cursor: pointer;
+}
+.icon{
+	 width: 20px;
+	 object-fit: cover;
+}
+
+.profile-dropdown{
+	 background:white;
+	 box-shadow:3px 3px 13px lightgrey;
+	 border-radius: 10px;
+ 	 position:absolute;
+	 top: 20%;
+	 opacity: 0;
+	 visibility: hidden;
+	 right: 4%;
+	 width:26vw;
+	 z-index: 10;
+	 transition: 0.4s;
+	 margin-top: 60px;
+
+ }
+ 
+ 
+.smbar{
+	 cursor: pointer;
+	 color: white;
+}
+.name{
+	 color: $back;
+}
+//mobile size css
+.small_menu{
+	 background: $back;
+	 display: none;
+	 position:relative;
+.smicons{
+i{
+	cursor: pointer;
+	 color: white;
+}
+}
+a{
+	 text-decoration: none;
+	 color: white;
+}
+}
+
+
+
+.profile-menu{
+background: white;
+padding: 2px;
+li{
+ 	line-height: 45px;
+	border-bottom: 1px solid lightgrey;
+	font-size: x-large;
+	padding: 2px;
+ 	list-style: none;
+&:hover{
+	 background: $back;
+	 transition: 0.5s;
+}
+&:hover a{
+	color: white;
+}
+}
+.active{
+	background: $back;
+	color: white;
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	font-weight: lighter;
+ }
+i{
+	font-weight: lighter;
+}
+}
+
+
+
+
+
+
+
+#sm_searchbox{
+	position:absolute;
+	left: 0;
+	background:$back;
+	height: 100%;
+	width: 90%;
+	top: 0;
+	visibility: hidden;
+	transition: 0.4s ease-in;
+
+
+}
+.close{
+	 cursor: pointer;
+}
+.close:hover{
+	 transform: rotate(360deg);
+	 transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+.profileactive{
+	 visibility: visible;
+	 opacity: 1;
+	 top: 3%;
+	}
+
+.chatactive{
+    @include active;
+	}
+.notifyactive{
+	@include active;
+	}
+
+
+.smnotifyactive{
+	@include active;
+	}
+
+
+.mobchatactive{
+	 @include active;
+	}
+
+
+
+
+.mobbellactive{
+	 @include active;
+	}
+
+
+
+.bellactive,.commentactive{
+	
+	 @include active;
+
+}
+.mobsearchactive{
+	visibility: visible !important;
+	transition: 0.5s;
+}
+
+
+
+.clickactive{
+	 background:white !important;
+}
+.closebtn{
+	 font-size: x-large;
+	 cursor: pointer;
+}
+
+
+
+
+ 
+
+
+.productimg{
+	 width: 50px;
+}
+
+.smscroll{
+	 position:fixed !important;
+	 top: 0;
+	 width: 100%;
+	 z-index: 10;
+	 transition: 0.4s;
+}
+ 
+
+ .icons img{ 
+&:hover{
+		transform: scale(1.2,1.2);
+ }
+}
+
+#messagebox{
+	 	@include  messagebox;
+}
+
+
+#sm-messagebox{
+	@include messagebox;
+}
+
+#notificationbox{
+	 @include messagebox;
+	 height: auto;
+}
+
+
+
+#sm-notificationbox{
+	@include messagebox;
+	height: auto;
+}
+.notifyicon{
+	 width: 40px !important;
+	 cursor: pointer;
+
+}
+
+
+
+ .footer{
+ 	 background: $back;
+ }
+
+
+
+
+.scrollActive{
+	 background:white;
+	 box-shadow:3px 5px 14px lightgrey;
+	 padding: 20px !important;
+	 transition: 0.3s ease-in;
+	 position: fixed;
+	 top: 0;
+	 z-index: 10;
+}
+.homeActive{
+	top:  30%;
+ visibility: visible;
+	 opacity: 1;
+}
+
+
+.collapsei{
+	 visibility: hidden;
+}
+.toggle_show{
+	 visibility: visible;
+	 transition: 0.4s ease;
+ }
+
+
+
+
+.loginbox{
+	 width: 50%;
+	 margin: 0 auto;
+	 background: lightgrey;
+	 padding: 20px;
+	 box-shadow: 3px 5px 12px grey;
+ 	 position: relative;
+
+input{
+ }
+}
+.loginbox::after{
+	content : "";
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	border-radius: 100%;
+	background: $color2;
+	box-shadow: 3px 5px 12px grey;
+	left: -20%;
+	top: 50%;
+	z-index: -99999 !important;
+}
+
+
+.bgimg{
+  	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+
+
+ .loginimg{
+ 	 width: 120px;
+ 	 height: 120px;
+ 	 object-fit: contain;
+ 	 margin-top: -120px;
+  }
+
+
+
+
+
+  .user-profile{
+  	 width: 100% !important;
+   }
+
+   .profileinfo{
+   	 width: 100%;
+    }
+ 
+ 
+
+
+ .profile-text{
+ a{
+ 	text-decoration: none;
+ 	font-size: 20px !important;
+ }
+ li{
+ 	 list-style: none;
+ 	 line-height: 50px;
+ 	 padding: 10px;
+ }
+ }
+
+li:hover{
+	 background: $color2;
+	 transition: 0.4s;
+	 color: white !important;  
+	 cursor: pointer;
+}
+li:hover a{
+	 color: white !important;
+}
+
+ .active{
+ 	background: $color2;
+ 	color: white;
+
+ }
+
+
+ .iconbox{
+ 	 font-size: xx-large;
+ 	 background: lightgrey;
+ 	 width: 90px;
+ 	 height: 90px;
+ 	 border-radius: 100%;
+ 	 display: flex;
+ 	 justify-content: center;
+ 	 align-items: center;
+ }
+
+
+ .box-1, .box-3, .box-6, .box-7{
+ 	 box-shadow: 3px 5px 12px lightgrey;
+ }
+ 
+
+
+ #centermenu {
+li:hover a{
+	 color: black !important;
+ }}
+
+
+
+
+
+.workmenu{
+	 width: 80%;
+	 padding: 20px;
+	 background: white;
+	 box-shadow: 3px 5px 13px lightgrey;
+li{
+	 list-style: none;
+	 display: flex;
+	 padding: 10px;
+	 border-bottom: 1px solid lightgrey;
+	 margin: 4px;
+}
+a{
+	 text-decoration: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
